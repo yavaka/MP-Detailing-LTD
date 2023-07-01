@@ -7,7 +7,7 @@
  * Generale Style
  *************************************/
 
- body {
+body {
 	background: #ffffff;
 	color: #333;
 	font-family: 'Montserrat', sans-serif;
@@ -38,7 +38,7 @@ h6 {
 }
 
 a {
-	color: #708f52;
+	color: #000;
 	text-decoration: none !important;
 	-moz-transition: all 0.5s ease-in-out 0s;
 	-ms-transition: all 0.5s ease-in-out 0s;
@@ -963,7 +963,7 @@ h5 {
 .navbar-toggler {
 	position: absolute;
 	right: 13px;
-    top: 28px;
+	top: 28px;
 }
 
 .navbar-toggler:focus,
@@ -1021,13 +1021,13 @@ h5 {
 }
 
 @media (min-width: 769px) {
-	.white-logo{
+	.white-logo {
 		padding-top: 15px;
 	}
 }
 
 @media (max-width: 768px) {
-	.black-logo{
+	.black-logo {
 		width: 165px;
 		height: 65px;
 	}
@@ -1913,20 +1913,22 @@ hr {
 }
 
 .reservation-btn {
-    background-color: rgba(207, 9, 44, 0.95);
-    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 2px;
-    margin-top: 20px;
+	background-color: rgba(207, 9, 44, 0.95);
+	transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	color: #fff;
+	padding: 12px 20px;
+	border-radius: 2px;
+	margin-top: 20px;
 }
+
 .reservation-btn:hover {
 	background-color: #c5092a;
 	color: #fff;
 	padding: 12px 20px;
 	border-radius: 2px;
 }
-.mt-20{
+
+.mt-20 {
 	margin-top: 20px;
 }
 
@@ -2205,14 +2207,14 @@ hr {
 
 .single-testimonial {
 	position: relative;
-    background-color: transparent;
-    padding: 40px;
-    margin: 30px;
-    background: #ffffff;
-    border-radius: 3px;
-    margin-top: 30px;
-    -webkit-box-shadow: 0px 5px 30px 0px rgb(148 146 245 / 15%);
-    box-shadow: 0px 5px 30px 0px rgb(148 146 245 / 15%);
+	background-color: transparent;
+	padding: 40px;
+	margin: 30px;
+	background: #ffffff;
+	border-radius: 3px;
+	margin-top: 30px;
+	-webkit-box-shadow: 0px 5px 30px 0px rgb(148 146 245 / 15%);
+	box-shadow: 0px 5px 30px 0px rgb(148 146 245 / 15%);
 }
 
 .rating-box ul li {
@@ -2531,12 +2533,12 @@ hr {
 	text-decoration: underline !important;
 }
 
-.blog-area .card{
+.blog-area .card {
 	background: #ffffff;
-    border-radius: 3px;
-    margin-top: 30px;
-    -webkit-box-shadow: 0px 5px 30px 0px rgb(148 146 245 / 15%);
-    box-shadow: 0px 5px 30px 0px rgb(148 146 245 / 15%);
+	border-radius: 3px;
+	margin-top: 30px;
+	-webkit-box-shadow: 0px 5px 30px 0px rgb(148 146 245 / 15%);
+	box-shadow: 0px 5px 30px 0px rgb(148 146 245 / 15%);
 	border: unset;
 }
 
@@ -2779,6 +2781,29 @@ textarea:focus {
 	border-radius: 3px;
 }
 
+.vertical-line {
+	position: relative;
+}
+
+.vertical-line::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 2px;
+	height: 100%;
+	background-color: #708f52;
+}
+
+.contact-details {
+	margin-top: 15px;
+}
+
+.site-icons {
+	color: #708f52;
+}
+
 /**************************************
  * Footer Section Style
  *************************************/
@@ -2838,83 +2863,105 @@ textarea:focus {
 	.section-title h2 {
 		font-size: 30px;
 	}
+
 	.kar-theme-menu-header-navber-area .nav-top-bar {
 		display: none;
 	}
+
 	#navbarDefault {
 		height: 303px;
-	    overflow-y: scroll;
+		overflow-y: scroll;
 		width: 100%;
 	}
+
 	.home-area {
 		padding-top: 130px;
 	}
+
 	.home-area .home-content h1 {
 		font-size: 65px;
 	}
+
 	/* slider */
 	.slider .parallax-slider .caption h1 {
 		font-size: 65px;
 	}
+
 	.slider .control-text .swiper-nav-ctrl {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-	.about-content h2{
+
+	.about-content h2 {
 		font-size: 30px;
 	}
+
 	.menu-day-product-content .menu-day-tab-list li {
 		padding: 10px 15px;
 		margin: 15px 0;
 		border: 0;
 	}
+
 	.menu-day-product-content .menu-day-tab-list li a {
 		font-size: 16px;
 	}
+
 	.kar-theme-reservation-area h2 {
 		font-size: 35px;
 		margin-bottom: 0;
 	}
+
 	.gallery-area .gallery-list .nav li {
 		margin: 10px 10px;
 	}
+
 	.theme-single-press-content {
 		/*padding: 15px 0;*/
 		margin-bottom: 15px;
 	}
+
 	.theme-single-press-content h3 {
 		padding-bottom: 15px;
 	}
+
 	.contact-box {
 		margin-bottom: 30px;
 	}
+
 	.form-container-box {
 		padding: 25px 15px;
 		margin-top: 30px;
 	}
+
 	.footer-area {
 		text-align: center;
 	}
+
 	.footer-area .footer-link ul {
 		margin-top: 10px;
 		text-align: center;
 		list-style-type: none;
 	}
-	#navbarDefault{
+
+	#navbarDefault {
 		/*height: auto !important;
 		overflow-y:hidden !important;*/
 		background: rgb(255 255 255);
 	}
-	.header-chef-image img{
+
+	.header-chef-image img {
 		max-width: 200px;
 	}
+
 	.navbar-nav {
-	    /* margin-top: 85px; */
+		/* margin-top: 85px; */
 	}
-	.book-now a{
+
+	.book-now a {
 		display: inline-block;
 	}
-	.kar-theme-reservation-area .text-right{
+
+	.kar-theme-reservation-area .text-right {
 		text-align: left !important;
 	}
 }
@@ -2923,162 +2970,206 @@ textarea:focus {
 	.home-area .home-content h1 {
 		font-size: 80px;
 	}
+
 	.home-area {
 		padding-top: 170px;
 		padding-bottom: 40px;
 	}
+
 	.about-image {
 		text-align: center;
 		margin-top: 30px;
 	}
+
 	.tab .tabs li {
 		margin: 0 20px;
 	}
+
 	.theme-single-press-content {
 		margin-bottom: 30px;
 	}
+
 	.theme-single-press-content h3 {
 		padding-bottom: 15px;
 	}
+
 	.contact-box {
 		margin-bottom: 30px;
 	}
-	#navbarDefault{
+
+	#navbarDefault {
 		height: 303px;
-	    overflow-y: scroll;
+		overflow-y: scroll;
 		background: rgb(255 255 255 / 78%);
 	}
-	.header-chef-image img{
+
+	.header-chef-image img {
 		max-width: 200px;
 	}
+
 	.navbar-nav {
-	    margin-top: 85px;
+		margin-top: 85px;
 	}
-	.book-now a{
+
+	.book-now a {
 		display: inline-block;
 	}
-	.kar-theme-reservation-area .text-right{
+
+	.kar-theme-reservation-area .text-right {
 		text-align: left !important;
 	}
 
 }
-@media screen and (max-width: 320px) and (min-width: 0px){
+
+@media screen and (max-width: 320px) and (min-width: 0px) {
 	.section-title h2 {
 		font-size: 30px;
 	}
+
 	.navbar-nav {
 		margin-top: 15px;
 	}
+
 	.navbar-b .nav-item {
 		margin-bottom: 10px;
 	}
+
 	.navbar-b .nav-item:last-child {
 		margin-bottom: 0px;
 	}
+
 	#navbarDefault {
 		width: 100%;
 	}
+
 	.home-area .home-content {
 		margin-bottom: 30px;
 		text-align: center;
 	}
+
 	.home-area {
 		padding-top: 130px;
 	}
+
 	.home-area .home-content h1 {
 		font-size: 40px;
 	}
+
 	/* slider */
 	.slider .parallax-slider .caption h1 {
 		font-size: 40px;
 	}
+
 	.slider .control-text .swiper-nav-ctrl {
 		display: none;
 	}
-	.about-content h2{
+
+	.about-content h2 {
 		font-size: 30px;
 	}
+
 	.kar-theme-reservation-area h2 {
 		font-size: 35px;
 		margin-bottom: 0;
 	}
+
 	.gallery-area .gallery-list .nav li {
 		margin: 10px 10px;
 	}
+
 	.theme-single-press-content {
 		/*padding: 15px 0;*/
 	}
+
 	.theme-single-press-content h3 {
 		padding-bottom: 15px;
 	}
+
 	.contact-box {
 		margin-bottom: 30px;
 	}
+
 	.form-container-box {
 		padding: 25px 15px;
 		margin-top: 30px;
 	}
+
 	.footer-area {
 		text-align: center;
 	}
+
 	.footer-area .footer-link ul {
 		margin-top: 10px;
 		text-align: center;
 		list-style-type: none;
 	}
-	
+
 }
 
 @media only screen and (max-width: 479px) {
 	.section-title h2 {
 		font-size: 30px;
 	}
+
 	.navbar-nav {
 		/* margin-top: 85px; */
 	}
+
 	.navbar-b .nav-item {
 		margin-bottom: 10px;
 	}
+
 	.navbar-b .nav-item:last-child {
 		margin-bottom: 0px;
 	}
+
 	.home-area .home-content h1 {
 		font-size: 50px;
 	}
+
 	/* slider */
 	.slider .parallax-slider .caption h1 {
 		font-size: 50px;
 	}
+
 	.slider .control-text .swiper-nav-ctrl {
 		display: none;
 	}
 
-	.about-content h2{
+	.about-content h2 {
 		font-size: 30px;
 	}
+
 	.kar-theme-reservation-area h2 {
 		font-size: 35px;
 		margin-bottom: 0;
 	}
+
 	.gallery-area .gallery-list .nav li {
 		margin: 10px 10px;
 	}
+
 	.theme-single-press-content {
 		/*padding: 15px 0;*/
 	}
+
 	.theme-single-press-content h3 {
 		padding-bottom: 15px;
 	}
+
 	.contact-box {
 		margin-bottom: 30px;
 	}
+
 	.form-container-box {
 		padding: 25px 15px;
 		margin-top: 30px;
 	}
+
 	.footer-area {
 		text-align: center;
 	}
+
 	.footer-area .footer-link ul {
 		margin-top: 10px;
 		text-align: center;
