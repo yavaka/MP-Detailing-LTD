@@ -1789,7 +1789,7 @@ hr {
 	align-items: center;
 	justify-content: center;
 	color: #ffffff;
-	font-size: 34px;
+	font-size: 25px;
 }
 
 .menu-product-details {
@@ -1862,6 +1862,7 @@ hr {
 	display: list-item;
 	list-style: disc;
 	margin-left: 45px;
+	font-size: 20px;
 }
 
 .menu-product-description span {
@@ -2157,6 +2158,7 @@ hr {
 	margin-top: 30px;
 }
 
+.service-view-more .button,
 .contact-area .button,
 .blog-area .button,
 .gallery-area .button {
@@ -2164,6 +2166,7 @@ hr {
 	color: #708f52;
 }
 
+.service-view-more .button:hover,
 .contact-area .button:hover,
 .blog-area .button:hover,
 .gallery-area .button:hover {
@@ -2781,19 +2784,22 @@ textarea:focus {
 	border-radius: 3px;
 }
 
-.vertical-line {
-	position: relative;
-}
-
-.vertical-line::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 2px;
-	height: 100%;
-	background-color: #708f52;
+@media (min-width: 769px)
+{
+	.vertical-line {
+		position: relative;
+	}
+	
+	.vertical-line::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 2px;
+		height: 100%;
+		background-color: #708f52;
+	}
 }
 
 .contact-details {
